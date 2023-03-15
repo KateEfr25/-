@@ -8,8 +8,7 @@
      <script src="https://unpkg.com/vue@next"></script>
 </head>
 <body>
-     
-     <div id="app">
+          <div id="app">
       <h1>Магазин товаров</h1>
        <div class="productsWrapper">
        <Product v-for="product in products"
@@ -20,8 +19,6 @@
              :cart="cart"
              @add="onAddToCart"
                ></Product>
-
-
 </div>
            <Cart class="cart" :cart="cart"/>
            </div>
